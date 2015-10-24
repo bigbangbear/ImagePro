@@ -5,8 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 
-import java.net.URL;
-
 import bin.hui.yu.imagepro.R;
 
 /**

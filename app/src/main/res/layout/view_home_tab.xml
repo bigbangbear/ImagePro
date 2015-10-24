@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主界面Tab导航栏上的Tab view的布局 -->
+<view.HomeTabView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_tabview_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:animationCache="true">
+
+    <!-- 标题，带有图标 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/home_tabview_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/home_tabview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@drawable/color_home_tab_text_selector"
+            android:textSize="12sp"
+            android:includeFontPadding="false"
+            />
+    </LinearLayout>
+
+    <!-- 右上角用作提醒的图标 -->
+    <TextView
+        android:id="@+id/home_tabview_tip"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_gravity="center_horizontal|top"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/tab_bg_user_messagenotice"
+        android:visibility="gone"
+        />
+</view.HomeTabView>
