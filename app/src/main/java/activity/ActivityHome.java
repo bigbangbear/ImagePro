@@ -36,6 +36,7 @@ public class ActivityHome extends AppCompatActivity {
         setContentView(R.layout.activity_activity_home);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
 
